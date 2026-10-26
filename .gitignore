@@ -31,3 +31,4 @@
 *~
 *.swp
 /packages/mintupdate/*.deb
+*.pre-alpha*
