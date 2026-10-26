@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+sed -i \
+  -e 's/^# *it_IT.UTF-8 UTF-8/it_IT.UTF-8 UTF-8/' \
+  -e 's/^# *en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' \
+  /etc/locale.gen
+
+locale-gen
+
+printf 'LANG=it_IT.UTF-8\n' > /etc/default/locale

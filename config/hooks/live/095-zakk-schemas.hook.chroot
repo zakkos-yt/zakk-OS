@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+
+echo "zakk-OS: verifico gli schemi GSettings"
+
+glib-compile-schemas --strict /usr/share/glib-2.0/schemas
+
+echo "zakk-OS: schemi GSettings validati"

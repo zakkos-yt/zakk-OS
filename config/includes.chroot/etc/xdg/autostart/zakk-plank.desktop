@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Plank
+Comment=zakk-OS Dock
+Exec=plank
+Icon=plank
+Terminal=false
+OnlyShowIn=X-Cinnamon;
+X-GNOME-Autostart-enabled=true

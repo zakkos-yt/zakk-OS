@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ ! -d /sys/firmware/efi ]; then
+    zenity --error \
+      --title="zakk-OS Installer" \
+      --width=420 \
+      --text="zakk-OS richiede l'avvio in modalità UEFI.\n\nRiavvia il computer e seleziona l'avvio UEFI dal firmware."
+    exit 1
+fi
+
+exec /usr/bin/calamares-install-debian

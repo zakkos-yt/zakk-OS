@@ -1,0 +1,36 @@
+# zakk-OS 0.1 — laboratorio ISO
+
+**Stato:** scheletro di build NON ancora verificato in esecuzione; **non** è una ISO funzionante.
+
+Base: Debian 13 Trixie (i repository avanzano rispetto alla point release 13.7). Cinnamon Core / X11; systemd Debian intatto. Obiettivo: distro minima orientata all'AI locale.
+
+## Prima prova (su VM Debian 13, preferibilmente)
+
+```bash
+sudo apt update
+sudo apt install live-build debootstrap xorriso squashfs-tools
+cd zakk-os-starter
+sudo ./build.sh
+```
+
+Il risultato previsto, **se la build termina senza errori**, è una ISO ibrida nella cartella. Puoi controllarla in QEMU o VirtualBox, **senza installarla su un disco reale**.
+
+> NOTA: il profilo iniziale è deliberatamente ridotto. Le dipendenze e il boot devono essere collaudati. Se `apt` non trova un pacchetto o `live-build` segnala un'opzione incompatibile, correggere in Git e riprovare. Non usare `--force`.
+
+## Scelte fissate per il prodotto finale
+
+- Installatore Calamares con 3 modalità: predefinita `/` + `/home` separate; manuale; disco intero con unico filesystem `/` che contiene `/home`. **Ancora da integrare**, non affidare a questo prototipo partizionamenti reali.
+- Ecosia, Telegram, LocalSend e Ollama senza modelli nella ISO finale; nella prima build volutamente non inclusi, per verificare prima il core e le fonti Flatpak/upstream.
+- gThumb unico editor/visualizzatore immagini; VLC unico player A/V; FFmpeg presente.
+- Zakk-OS Root: GUI futura Rust/GTK4 in esecuzione user, Polkit per operazioni privilegiate, script controllati per driver e AI. **Non implementato ancora.**
+- Gestori applicazioni e aggiornamenti classici sempre visibili: **da selezionare/testare**.
+- Nessun CUPS, Bluetooth, LibreOffice, Thunderbird, Pidgin, HexChat, OBS preinstallati.
+- Tema grafite/blu, dock Plank, logo e wallpaper: **configurazione da implementare**.
+- Ollama per utente con modelli in `~/.ollama_models`, evitando servizio globale predefinito: **da implementare e testare**.
+
+## Avvertenze
+
+- Non eseguire su una macchina da lavoro prima di averla verificata in VM.
+- `lb build` scarica pacchetti dai repository Debian; richiede rete e molto spazio libero.
+- Nessun script in questo progetto formatta dischi o modifica partizioni.
+- `--apt-recommends false` aiuta a evitare bloat ma può eliminare componenti utili: serviranno test manuali di sessione, rete, video e audio.

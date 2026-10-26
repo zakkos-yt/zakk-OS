@@ -1,0 +1,47 @@
+# Core desktop and boot: initial candidate set; validate dependency closure at build time.
+linux-image-amd64
+live-boot
+live-config
+systemd-sysv
+cinnamon-core
+lightdm
+lightdm-gtk-greeter
+xserver-xorg
+network-manager
+plank
+# Base functions: one app per function
+vlc
+ffmpeg
+gthumb
+# essential workstation utilities
+sudo
+polkitd
+pkexec
+git
+curl
+wget
+python3
+btop
+smartmontools
+flatpak
+nemo
+timeshift
+appstream
+packagekit
+arc-theme
+papirus-icon-theme
+pciutils
+calamares
+calamares-settings-debian
+zenity
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+x11-xserver-utils
+cracklib-runtime
+wamerican
+dosfstools
+squashfs-tools
+locales
+gir1.2-flatpak-1.0
+dconf-cli
+gnome-terminal

@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+if ! command -v dconf >/dev/null 2>&1; then
+    echo "ERRORE: dconf non disponibile" >&2
+    exit 1
+fi
+
+dconf update
+
+echo "zakk-OS: preferenza dark mode configurata"

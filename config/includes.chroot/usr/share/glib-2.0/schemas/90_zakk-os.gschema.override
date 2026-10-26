@@ -1,0 +1,22 @@
+[org.cinnamon.desktop.interface]
+gtk-theme='Arc-Dark'
+icon-theme='Papirus-Dark'
+cursor-theme='Adwaita'
+
+[org.cinnamon.desktop.wm.preferences]
+theme='Arc-Dark'
+
+[org.cinnamon.theme]
+name='Arc-Dark'
+
+[org.cinnamon]
+app-menu-icon-name='zakk-os-menu'
+app-menu-label=''
+panels-enabled=['1:0:top']
+panels-height=['1:30']
+panels-autohide=['1:false']
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:right:0:systray@cinnamon.org:1', 'panel1:right:1:xapp-status@cinnamon.org:2', 'panel1:right:2:notifications@cinnamon.org:3', 'panel1:right:3:removable-drives@cinnamon.org:4', 'panel1:right:4:keyboard@cinnamon.org:5', 'panel1:right:5:network@cinnamon.org:6', 'panel1:right:6:sound@cinnamon.org:7', 'panel1:right:7:power@cinnamon.org:8', 'panel1:right:8:calendar@cinnamon.org:9', 'panel1:right:9:cornerbar@cinnamon.org:10']
+
+[org.cinnamon.desktop.background]
+picture-uri='file:///usr/share/backgrounds/zakk-os/default.png'
+picture-options='zoom'

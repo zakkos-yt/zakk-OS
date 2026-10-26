@@ -1,0 +1,6 @@
+[net.launchpad.plank.dock.settings]
+alignment='center'
+position='bottom'
+icon-size=42
+hide-mode='intelligent'
+theme='Default'

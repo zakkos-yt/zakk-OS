@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+lb config noauto \
+  --distribution trixie \
+  --architectures amd64 \
+  --binary-images iso-hybrid \
+  --archive-areas 'main contrib non-free non-free-firmware' \
+  --apt-recommends false \
+  --firmware-chroot false \
+  --debian-installer none \
+  --bootappend-live 'boot=live components locales=it_IT.UTF-8 keyboard-layouts=it' \
+  "${@}"

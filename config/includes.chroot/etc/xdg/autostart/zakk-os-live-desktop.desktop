@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=zakk-OS Live Desktop
+Exec=/usr/local/bin/zakk-os-live-desktop
+OnlyShowIn=X-Cinnamon;
+NoDisplay=true
+X-GNOME-Autostart-enabled=true

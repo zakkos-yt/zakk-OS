@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="128" height="128" viewBox="0 0 128 128">
+
+  <!-- Sfondo antracite -->
+  <rect width="128" height="128" rx="22" fill="#20252D"/>
+
+  <!-- Z bianca geometrica -->
+  <path d="M29 29 H99 V42 L49 86 H99 V99 H29 V86 L79 42 H29 Z"
+        fill="#F2F5FA"/>
+
+  <!-- Firma blu elettrico -->
+  <rect x="29" y="108" width="70" height="5"
+        rx="2.5" fill="#168BFF"/>
+
+</svg>

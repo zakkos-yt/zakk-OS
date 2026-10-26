@@ -1,0 +1,6 @@
+# Basic firmware support; keep proprietary GPU drivers out of the first ISO.
+firmware-linux-free
+firmware-misc-nonfree
+firmware-amd-graphics
+firmware-iwlwifi
+firmware-nvidia-graphics

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Il collegamento deve apparire soltanto nella sessione Live.
+grep -qw 'boot=live' /proc/cmdline || exit 0
+
+DESKTOP="$(xdg-user-dir DESKTOP 2>/dev/null)"
+
+[ -n "$DESKTOP" ] || DESKTOP="$HOME/Desktop"
+
+mkdir -p "$DESKTOP"
+
+cp /usr/share/applications/zakk-os-install.desktop \
+   "$DESKTOP/zakk-os-install.desktop"
+
+chmod +x "$DESKTOP/zakk-os-install.desktop"
+
+# Segna il collegamento come attendibile, quando supportato.
+gio set "$DESKTOP/zakk-os-install.desktop" \
+    metadata::trusted true 2>/dev/null || true

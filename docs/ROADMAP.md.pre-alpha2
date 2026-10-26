@@ -1,0 +1,11 @@
+# Roadmap
+
+- [ ] 0.1a: `live-build` completa, avvio in VM e login Cinnamon funzionante
+- [ ] 0.1b: audio, rete, file manager, VLC, FFmpeg, gThumb, Plank
+- [ ] 0.1c: gestore applicazioni, gestore aggiornamenti, Ecosia, Telegram, LocalSend
+- [ ] 0.1d: branding Cinnamon/LightDM/Plank e primo wallpaper
+- [ ] 0.2: zakk-OS Root in Rust GTK4, operazioni a privilegi ridotti
+- [ ] 0.3: Ollama senza modelli, account user, gestione GPU
+- [ ] 0.4: installazione opzionale Open WebUI e ComfyUI
+- [ ] 0.5: istantanee e uninstall tracciata
+- [ ] 0.6: installer Calamares con tre layout, test non distruttivi in VM

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Installa zakk-OS
+GenericName=Installatore di zakk-OS
+Comment=Installa zakk-OS sul computer
+Exec=/usr/local/bin/zakk-os-install
+Icon=zakk-os-menu
+Terminal=false
+Categories=System;
+StartupNotify=true

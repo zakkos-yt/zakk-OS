@@ -1,0 +1,34 @@
+#!/bin/sh
+set -eu
+
+FILE="/usr/lib/linuxmint/mintUpdate/mintUpdate.py"
+
+[ -f "$FILE" ] || {
+    echo "ERRORE: MintUpdate non installato"
+    exit 1
+}
+
+python3 - "$FILE" <<'PY'
+import pathlib
+import sys
+
+path = pathlib.Path(sys.argv[1])
+text = path.read_text()
+
+old_policy = 'if self.test_mode == "layer-error" or (not self.check_policy()):'
+new_policy = 'if self.test_mode == "layer-error":'
+
+old_mirror = '            self.mirror_check()'
+new_mirror = '            # zakk-OS: skip Linux Mint mirror check'
+
+assert text.count(old_policy) == 1
+assert text.count(old_mirror) == 1
+
+text = text.replace(old_policy, new_policy, 1)
+text = text.replace(old_mirror, new_mirror, 1)
+
+compile(text, str(path), "exec")
+path.write_text(text)
+
+print("zakk-OS: patch MintUpdate applicata")
+PY

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Install Debian
+Exec=/usr/bin/calamares-install-debian
+Icon=install-debian
+NoDisplay=true

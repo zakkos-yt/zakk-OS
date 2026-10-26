@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+FILE=/usr/lib/linuxmint/mintinstall/mintinstall.py
+
+if [ ! -f "$FILE" ]; then
+    echo "ERRORE: MintInstall non trovato in $FILE" >&2
+    exit 1
+fi
+
+sed -i 's/linuxmint-logo-badge-symbolic/zakk-os-menu/g' "$FILE"
+
+echo "zakk-OS: branding MintInstall applicato"

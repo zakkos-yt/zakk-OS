@@ -1,0 +1,33 @@
+# Build live-build
+/build.log
+/.build/
+/binary/
+/cache/
+/chroot/
+/local/
+/flatpak-staging/
+
+# File generati
+/*.iso
+/*.iso.sha256
+/binary.*
+/chroot.*
+/live-image-*
+/filesystem.*
+/config/bootstrap
+/config/chroot
+/config/common
+/config/binary
+/config/source
+
+# Flatpak preinstallati nella ISO
+/config/includes.chroot/var/lib/flatpak/
+
+# Pacchetti scaricati nella root
+/*.deb
+
+# File temporanei
+*.bak
+*~
+*.swp
+/packages/mintupdate/*.deb

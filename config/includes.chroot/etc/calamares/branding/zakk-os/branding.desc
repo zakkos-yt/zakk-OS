@@ -1,0 +1,38 @@
+---
+componentName: zakk-os
+
+welcomeStyleCalamares: false
+welcomeExpandingLogo: true
+
+windowExpanding: normal
+windowSize: 900px,600px
+windowPlacement: center
+
+strings:
+    productName:         zakk-OS
+    shortProductName:    zakk-OS
+    version:             0.2 Alpha 2
+    shortVersion:        0.2 Alpha 2
+    versionedName:       zakk-OS 0.2 Alpha 2
+    shortVersionedName:  zakk-OS 0.2 Alpha 2
+    bootloaderEntryName: zakk-OS
+    productUrl:          https://zakkos.it
+    supportUrl:          https://zakkos.it
+    knownIssuesUrl:      https://zakkos.it/zakk-os-changelog/
+    releaseNotesUrl:     https://zakkos.it/zakk-os-changelog/
+
+slideshow: [ "welcome.png" ]
+
+sidebar: widget
+navigation: widget
+
+images:
+    productLogo:         "zakk-logo.svg"
+    productIcon:         "zakk-logo.svg"
+    productWelcome:      "welcome.png"
+
+style:
+    SidebarBackground:        "#20252D"
+    SidebarText:              "#FFFFFF"
+    SidebarTextCurrent:       "#FFFFFF"
+    SidebarBackgroundCurrent: "#245BA8"
