@@ -37,6 +37,21 @@ Nasce come progetto personale per creare un sistema essenziale, personalizzabile
 
 *Immagini reali della versione 0.2 Alpha 2, acquisite durante i test.*
 
+---
+
+## 📥 Scarica zakk-OS 0.2 Alpha 2
+
+**⚠️ VERSIONE SPERIMENTALE — SOLO UEFI**
+
+[**⬇️ SCARICA LA ISO DI ZAKK-OS**](https://github.com/zakkos-yt/zakk-OS/releases/download/v0.2-alpha2/zakk-OS_0.2_alpha2.iso)
+
+[Note di rilascio](https://github.com/zakkos-yt/zakk-OS/releases/tag/v0.2-alpha2) |
+[Checksum SHA-256](https://github.com/zakkos-yt/zakk-OS/releases/download/v0.2-alpha2/zakk-OS_0.2_alpha2.iso.sha256)
+
+**Non utilizzare su sistemi di produzione. Effettuare un backup prima dell'installazione.**
+
+---
+
 ## Caratteristiche della Alpha 2
 
 - Debian 13 Trixie, architettura AMD64
