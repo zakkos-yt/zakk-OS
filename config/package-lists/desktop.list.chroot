@@ -13,6 +13,8 @@ plank
 vlc
 ffmpeg
 gthumb
+firefox-esr
+flameshot
 # essential workstation utilities
 sudo
 polkitd
@@ -45,3 +47,13 @@ locales
 gir1.2-flatpak-1.0
 dconf-cli
 gnome-terminal
+
+# Audio stack - PipeWire / WirePlumber / ALSA
+pipewire
+pipewire-pulse
+pipewire-alsa
+wireplumber
+alsa-utils
+
+# Standard user directories
+xdg-user-dirs

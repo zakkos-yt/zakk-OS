@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Flameshot
+Comment=Screenshot tool
+Exec=flameshot
+Icon=org.flameshot.Flameshot
+Terminal=false
+X-GNOME-Autostart-enabled=true
+OnlyShowIn=X-Cinnamon;
