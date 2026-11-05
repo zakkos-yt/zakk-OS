@@ -1,0 +1,24 @@
+# zakk-OS 0.2 Alpha 4
+# Additional packages validated during Alpha 3 testing.
+
+# Wi-Fi and network authentication
+wpasupplicant
+gnome-keyring
+rfkill
+
+# Remote filesystems and network discovery
+gvfs-backends
+gvfs-fuse
+avahi-daemon
+libnss-mdns
+
+# Text editor
+mousepad
+
+# Archive management in Nemo
+file-roller
+nemo-fileroller
+
+# CPU microcode updates
+intel-microcode
+amd64-microcode
