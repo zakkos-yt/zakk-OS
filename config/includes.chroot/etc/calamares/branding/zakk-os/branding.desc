@@ -11,10 +11,10 @@ windowPlacement: center
 strings:
     productName:         zakk-OS
     shortProductName:    zakk-OS
-    version:             0.2 Alpha 2
-    shortVersion:        0.2 Alpha 2
-    versionedName:       zakk-OS 0.2 Alpha 2
-    shortVersionedName:  zakk-OS 0.2 Alpha 2
+    version:             0.2.4-alpha
+    shortVersion:        0.2.4-alpha
+    versionedName:       zakk-OS 0.2.4-alpha
+    shortVersionedName:  zakk-OS 0.2.4-alpha
     bootloaderEntryName: zakk-OS
     productUrl:          https://zakkos.it
     supportUrl:          https://zakkos.it
