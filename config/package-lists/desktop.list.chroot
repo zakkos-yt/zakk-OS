@@ -47,6 +47,8 @@ locales
 gir1.2-flatpak-1.0
 dconf-cli
 gnome-terminal
+zstd
+libpam-gnome-keyring
 
 # Audio stack - PipeWire / WirePlumber / ALSA
 pipewire
